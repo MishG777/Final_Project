@@ -1,0 +1,9 @@
+.header {
+  background-color: #93e093;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+/*# sourceMappingURL=header.css.map */

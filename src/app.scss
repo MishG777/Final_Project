@@ -7,10 +7,15 @@
     background-color: rgb(54, 49, 121);
     position: relative;
     top: 70px;
-
+    scroll-snap-type: y;
+    scroll-behavior: smooth;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     > * {
       width: 100vw;
       height: calc(100vh - 70px);
+      scroll-snap-align: start;
     }
   }
 }

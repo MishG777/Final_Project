@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
@@ -7,9 +7,10 @@ import Contacts from "./components/contacts/Contacts";
 import "./app.css";
 
 function App() {
+  const [menuOpen, setmenuOpen] = useState(true);
   return (
     <div className="app">
-      <Header />
+      <Header menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
 
       <div className="sections">
         <About />

@@ -8,10 +8,18 @@
   background-color: #363179;
   position: relative;
   top: 70px;
+  -ms-scroll-snap-type: y;
+      scroll-snap-type: y;
+  scroll-behavior: smooth;
+}
+
+.app .sections::-webkit-scrollbar {
+  display: none;
 }
 
 .app .sections > * {
   width: 100vw;
   height: calc(100vh - 70px);
+  scroll-snap-align: start;
 }
 /*# sourceMappingURL=app.css.map */

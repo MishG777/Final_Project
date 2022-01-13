@@ -6,8 +6,6 @@ function Header({ menuOpen, setmenuOpen }) {
     setmenuOpen(!menuOpen);
   };
 
-  // 48:56
-
   return (
     <div className={"header " + (menuOpen && "active")}>
       <div className="wrapper">

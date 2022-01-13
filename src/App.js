@@ -5,13 +5,14 @@ import Experience from "./components/experience/Experience";
 import Works from "./components/works/Works";
 import Contacts from "./components/contacts/Contacts";
 import "./app.css";
+import Menu from "./components/menu/Menu";
 
 function App() {
   const [menuOpen, setmenuOpen] = useState(true);
   return (
     <div className="app">
       <Header menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
-
+      <Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       <div className="sections">
         <About />
         <Experience />

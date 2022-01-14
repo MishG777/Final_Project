@@ -2,7 +2,7 @@
 
 .header {
   background-color: white;
-  color: $mainColor;
+  color: $secondColor;
   width: 100%;
   height: 70px;
   position: fixed;
@@ -27,7 +27,7 @@
 
         .icon {
           font-size: 25px;
-          margin-right: 3px;
+          margin-right: 4px;
         }
         span {
           font-size: 15px;
@@ -59,7 +59,7 @@
       span {
         width: 100%;
         height: 5px;
-        background-color: $mainColor;
+        background-color: $secondColor;
         transform-origin: left;
         transition: all 1s ease;
       }

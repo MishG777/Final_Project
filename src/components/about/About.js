@@ -1,6 +1,18 @@
+import { init } from "ityped";
+import { useEffect, useRef } from "react";
 import "./about.css";
-//1.10.51
+
 function About() {
+  const textRef = useRef();
+
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      backDelay: 1200,
+      backSpeed: 70,
+      strings: ["Developer", "SportsMan", "Designer", "Creator"],
+    });
+  }, []);
   return (
     <div className="about" id="about">
       <div className="left">
@@ -13,7 +25,7 @@ function About() {
           <h2>Hi, My Name Is</h2>
           <h1>Misho Ghibradze</h1>
           <h3>
-            Freelance <span></span>
+            I am <span ref={textRef}></span>
           </h3>
         </div>
         <a href="#works">

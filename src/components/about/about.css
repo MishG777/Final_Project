@@ -69,6 +69,11 @@
   font-size: 30px;
 }
 
+.about .right .wrapper h3 span {
+  font-size: inherit;
+  color: #e48154;
+}
+
 .about .right a {
   position: absolute;
   bottom: 10px;

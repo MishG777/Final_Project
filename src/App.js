@@ -8,15 +8,15 @@ import "./app.css";
 import Menu from "./components/menu/Menu";
 
 function App() {
-  const [menuOpen, setmenuOpen] = useState(true);
+  const [menuOpen, setmenuOpen] = useState(false);
   return (
     <div className="app">
       <Header menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       <Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       <div className="sections">
         <About />
-        <Experience />
         <Works />
+        <Experience />
         <Contacts />
       </div>
     </div>

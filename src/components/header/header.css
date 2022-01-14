@@ -44,7 +44,7 @@
 
 .header .wrapper .left .itemContainer .icon {
   font-size: 25px;
-  margin-right: 3px;
+  margin-right: 4px;
 }
 
 .header .wrapper .left .itemContainer span {
@@ -93,7 +93,7 @@
 }
 
 .header.active {
-  background-color: #2d1a53;
+  background-color: #c56133;
   color: white;
 }
 

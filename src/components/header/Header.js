@@ -13,14 +13,9 @@ function Header({ menuOpen, setmenuOpen }) {
           <a href="#about" className="logo">
             <code className="my">MY</code>PORTFOLIO.
           </a>
-
-          <div className="itemContainer">
-            <Person className="icon" />
-            <span>+995 571 07 66 55</span>
-          </div>
           <div className="itemContainer">
             <Mail className="icon" />
-            <span>MIX@gmail.com</span>
+            <span>Mikheil.gibradze.1@btu.edu.ge</span>
           </div>
         </div>
 

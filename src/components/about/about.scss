@@ -1,3 +1,5 @@
+@import "../../global.scss";
+
 .about {
   background-color: white;
   display: flex;
@@ -9,7 +11,7 @@
     .imageCont {
       width: 1000px;
       height: 1000px;
-      background-color: rgb(228, 129, 84);
+      background-color: $brownyColor;
       border-radius: 50%;
       display: flex;
       align-items: flex-end;
@@ -35,12 +37,18 @@
       h1 {
         font-size: 60px;
         margin: 10px 0;
+        color: red;
       }
       h2 {
         font-size: 35px;
       }
       h3 {
         font-size: 30px;
+
+        span {
+          font-size: inherit;
+          color: $mainColor;
+        }
       }
     }
 

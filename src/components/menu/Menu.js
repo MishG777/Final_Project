@@ -10,13 +10,13 @@ function Menu({ menuOpen, setmenuOpen }) {
     <div className={"menu " + (menuOpen && "active")}>
       <ul>
         <li onClick={menuClose}>
-          <a href="#about">About</a>
+          <a href="#about">Intro</a>
         </li>
         <li onClick={menuClose}>
-          <a href="#works">Works</a>
+          <a href="#works">About me</a>
         </li>
         <li onClick={menuClose}>
-          <a href="#experience">Experience</a>
+          <a href="#experience">Works</a>
         </li>
         <li onClick={menuClose}>
           <a href="#contact">Contact</a>

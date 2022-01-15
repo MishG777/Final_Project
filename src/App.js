@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Header from "./components/header/Header";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
-import Works from "./components/works/Works";
+import Aboutme from "./components/aboutme/Aboutme";
 import Contacts from "./components/contacts/Contacts";
 import "./app.css";
 import Menu from "./components/menu/Menu";
@@ -15,7 +15,7 @@ function App() {
       <Menu menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       <div className="sections">
         <About />
-        <Works />
+        <Aboutme />
         <Experience />
         <Contacts />
       </div>

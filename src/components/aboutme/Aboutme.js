@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./aboutme.css";
+import Portfoliolist from "../portfoliolist/Portfoliolist";
 
 function Aboutme() {
   const [about, setAbout] = useState("");
@@ -68,7 +69,7 @@ function Aboutme() {
   );
 
   const moreText = (
-    <a href="#experience">
+    <a href="#myworks">
       <img className="img" src="assets/down-chevron.png" alt="arrow" />
     </a>
   );
@@ -94,40 +95,78 @@ function Aboutme() {
     setMore(moreText);
   };
 
+  const [selected, setSelected] = useState("aboutme");
+
+  const list = [
+    // {
+    //   id: "aboutme",
+    //   title: "About me",
+    // },
+    {
+      id: "sport",
+      title: "Sport",
+    },
+    {
+      id: "love",
+      title: "Love",
+    },
+    {
+      id: "education",
+      title: "Education",
+    },
+    {
+      id: "car",
+      title: "Car",
+    },
+    // {
+    //   id: "more",
+    //   title: "More...",
+    // },
+  ];
+
   return (
     <div className="works" id="works">
       <h1>About me</h1>
       <ul>
-        <li className="active" onClick={aboutChange}>
-          About me
-        </li>
-        <li onClick={sportChange}>Sport</li>
+        {/* <li onClick={sportChange}>Sport</li>
         <li onClick={loveChange}>Love</li>
         <li onClick={educationChange}>Education</li>
         <li onClick={carChange}>Car</li>
-        <li onClick={moreChange}>More...</li>
+        <li onClick={moreChange}>More...</li> */}
+
+        {list.map((item) => (
+          <Portfoliolist
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
+        <li className="me" onClick={moreChange}>
+          More...
+        </li>
       </ul>
 
       <div className="container">
-        <div className="item">
+        <div className="item" onClick={aboutChange}>
+          <img src="assets/more.jpg" alt="photoo" />
+          <h3>ME</h3>
+        </div>
+        <div className="item" onClick={sportChange}>
           <img src="assets/sport.jpg" alt="photoo" />
           <h3>SPORT</h3>
         </div>
-        <div className="item">
+        <div className="item" onClick={loveChange}>
           <img src="assets/love.jpg" alt="photoo" />
           <h3>LOVE</h3>
         </div>
-        <div className="item">
+        <div className="item" onClick={educationChange}>
           <img src="assets/btu.jpg" alt="photoo" />
           <h3>Education</h3>
         </div>
-        <div className="item">
+        <div className="item" onClick={carChange}>
           <img src="assets/car.jpg" alt="photoo" />
           <h3>CAR</h3>
-        </div>
-        <div className="item">
-          <img src="assets/more.jpg" alt="photoo" />
-          <h3>MORE</h3>
         </div>
       </div>
 

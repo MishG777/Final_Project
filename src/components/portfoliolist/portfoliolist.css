@@ -1,0 +1,27 @@
+li {
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 15px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+}
+
+li:hover {
+  text-shadow: 1.3px 1.3px 1.5px #c56133;
+}
+
+li.active {
+  color: #c56133;
+  border: 2px solid #c56133;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+li.active:hover {
+  background-color: #c56133;
+  color: white;
+  -webkit-box-shadow: inset 300px 0 0 0 #c56133;
+          box-shadow: inset 300px 0 0 0 #c56133;
+}
+/*# sourceMappingURL=portfoliolist.css.map */

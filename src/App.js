@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "./components/header/Header";
-import About from "./components/about/About";
+import About from "./components/intro/About";
+import Myworks from "./components/myworks/Myworks";
 import Experience from "./components/experience/Experience";
 import Aboutme from "./components/aboutme/Aboutme";
 import Contacts from "./components/contacts/Contacts";
@@ -16,6 +17,7 @@ function App() {
       <div className="sections">
         <About />
         <Aboutme />
+        <Myworks />
         <Experience />
         <Contacts />
       </div>

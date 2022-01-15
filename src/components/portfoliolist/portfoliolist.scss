@@ -1,0 +1,27 @@
+@import "../../global.scss";
+li {
+  font-size: 20px;
+  margin-right: 15px;
+  padding: 15px;
+  letter-spacing: 1px;
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    text-shadow: 1.3px 1.3px 1.5px $mainColor;
+  }
+
+  &.active {
+    color: $mainColor;
+    border: 2px solid $mainColor;
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    &:hover {
+      background-color: $mainColor;
+      color: white;
+      box-shadow: inset 300px 0 0 0 $mainColor;
+    }
+  }
+}

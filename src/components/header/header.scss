@@ -34,6 +34,15 @@
           font-weight: 500;
         }
       }
+      .cv {
+        margin-left: 17px;
+
+        a {
+          color: $mainLighter;
+          font-weight: 700;
+          font-size: 25px;
+        }
+      }
 
       .logo {
         font-size: 38px;
@@ -43,7 +52,7 @@
         margin-right: 40px;
       }
       .my {
-        color: rgb(228, 129, 84);
+        color: $mainLighter;
       }
     }
 

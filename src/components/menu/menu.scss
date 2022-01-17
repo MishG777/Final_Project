@@ -16,6 +16,7 @@
 
   &.active {
     right: 0;
+    box-shadow: -12px -12px 20px rgb(43, 39, 39);
   }
 
   ul {
@@ -33,6 +34,7 @@
         color: inherit;
         font-size: inherit;
         letter-spacing: 2px;
+        font-family: "Josefin Sans", sans-serif;
       }
 
       &:hover {

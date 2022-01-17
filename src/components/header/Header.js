@@ -1,5 +1,5 @@
 import "./header.css";
-import { Person, Mail } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
 
 function Header({ menuOpen, setmenuOpen }) {
   const setMenu = () => {
@@ -16,6 +16,11 @@ function Header({ menuOpen, setmenuOpen }) {
           <div className="itemContainer">
             <Mail className="icon" />
             <span>Mikheil.gibradze.1@btu.edu.ge</span>
+          </div>
+          <div className="cv">
+            <a href="myworks/My_CV.pdf" download>
+              CV
+            </a>
           </div>
         </div>
 

@@ -52,6 +52,16 @@
   font-weight: 500;
 }
 
+.header .wrapper .left .cv {
+  margin-left: 17px;
+}
+
+.header .wrapper .left .cv a {
+  color: #e48154;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 .header .wrapper .left .logo {
   font-size: 38px;
   font-weight: 700;

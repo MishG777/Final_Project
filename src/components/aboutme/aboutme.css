@@ -12,22 +12,18 @@
           align-items: center;
 }
 
+.works .hovertxt {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 2px;
+  cursor: default;
+}
+
 .works h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   padding: 15px;
   letter-spacing: 7px;
   cursor: default;
-}
-
-.works ul {
-  margin: 10px;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-transition: all 2s ease;
-  transition: all 2s ease;
 }
 
 .works .container {
@@ -43,12 +39,12 @@
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 10px;
+  margin-top: 50px;
 }
 
 .works .container .item {
-  width: 250px;
-  height: 180px;
+  width: 200px;
+  height: 130px;
   border-radius: 20px;
   margin: 10px 20px;
   display: -webkit-box;
@@ -92,7 +88,7 @@
 .works .text-box {
   text-align: center;
   width: 100%;
-  height: 300px;
+  height: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,6 +98,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 .works .text-box h4 {
@@ -120,12 +117,55 @@
   line-height: 1.4em;
 }
 
-.works .arrow {
-  margin-top: 20px;
+.works .arrow-tools {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 5;
 }
 
-.works .arrow img {
-  width: 180px;
+.works .arrow-tools .check {
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  bottom: 25px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  z-index: 6;
+  opacity: 0;
+  font-family: "Josefin Sans", sans-serif;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+  cursor: default;
+}
+
+.works .arrow-tools .arrow {
+  margin-top: 45px;
+  z-index: 10;
+}
+
+.works .arrow-tools .arrow:hover > .check {
+  bottom: 25px;
+  right: 42.5%;
+  -webkit-transform: translateX(42.5%);
+          transform: translateX(42.5%);
+  opacity: 1;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  cursor: default;
+}
+
+.works .arrow-tools .arrow img {
+  width: 130px;
   position: relative;
   -webkit-animation: arrows 1s ease;
           animation: arrows 1s ease;

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./aboutme.css";
-import Portfoliolist from "../portfoliolist/Portfoliolist";
+// import Portfoliolist from "../portfoliolist/Portfoliolist";
 
 function Aboutme() {
   const [about, setAbout] = useState("");
@@ -95,61 +95,43 @@ function Aboutme() {
     setMore(moreText);
   };
 
-  const [selected, setSelected] = useState("aboutme");
+  // const [selected, setSelected] = useState("aboutme");
 
-  const list = [
-    // {
-    //   id: "aboutme",
-    //   title: "About me",
-    // },
-    {
-      id: "sport",
-      title: "Sport",
-    },
-    {
-      id: "love",
-      title: "Love",
-    },
-    {
-      id: "education",
-      title: "Education",
-    },
-    {
-      id: "car",
-      title: "Car",
-    },
-    // {
-    //   id: "more",
-    //   title: "More...",
-    // },
-  ];
+  // const list = [
+  //   // {
+  //   //   id: "aboutme",
+  //   //   title: "About me",
+  //   // },
+  //   {
+  //     id: "sport",
+  //     title: "Sport",
+  //   },
+  //   {
+  //     id: "love",
+  //     title: "Love",
+  //   },
+  //   {
+  //     id: "education",
+  //     title: "Education",
+  //   },
+  //   {
+  //     id: "car",
+  //     title: "Car",
+  //   },
+  //   // {
+  //   //   id: "more",
+  //   //   title: "More...",
+  //   // },
+  // ];
 
   return (
     <div className="works" id="works">
       <h1>About me</h1>
-      <ul>
-        {/* <li onClick={sportChange}>Sport</li>
-        <li onClick={loveChange}>Love</li>
-        <li onClick={educationChange}>Education</li>
-        <li onClick={carChange}>Car</li>
-        <li onClick={moreChange}>More...</li> */}
-
-        {list.map((item) => (
-          <Portfoliolist
-            title={item.title}
-            active={selected === item.id}
-            setSelected={setSelected}
-            id={item.id}
-          />
-        ))}
-        <li className="me" onClick={moreChange}>
-          More...
-        </li>
-      </ul>
+      <h4 className="hovertxt">Hover Over</h4>
 
       <div className="container">
         <div className="item" onClick={aboutChange}>
-          <img src="assets/more.jpg" alt="photoo" />
+          <img src="assets/justme.jpg" alt="photoo" />
           <h3>ME</h3>
         </div>
         <div className="item" onClick={sportChange}>
@@ -168,12 +150,20 @@ function Aboutme() {
           <img src="assets/car.jpg" alt="photoo" />
           <h3>CAR</h3>
         </div>
+        <div className="item" onClick={moreChange}>
+          <img src="assets/more.jpg" alt="photoo" />
+          <h3>MORE</h3>
+        </div>
       </div>
 
       <div className="text-box">
         <h4>{about}</h4>
       </div>
-      <div className="arrow">{more}</div>
+      <div className="arrow-tools">
+        <div className="arrow">
+          {more} <h3 className="check">Check my Works Down Below</h3>
+        </div>
+      </div>
     </div>
   );
 }

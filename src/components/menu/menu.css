@@ -25,6 +25,8 @@
 
 .menu.active {
   right: 0;
+  -webkit-box-shadow: -12px -12px 20px #2b2727;
+          box-shadow: -12px -12px 20px #2b2727;
 }
 
 .menu ul {
@@ -46,6 +48,7 @@
   color: inherit;
   font-size: inherit;
   letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .menu ul li:hover {

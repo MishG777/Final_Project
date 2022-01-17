@@ -16,7 +16,10 @@ function Menu({ menuOpen, setmenuOpen }) {
           <a href="#works">About me</a>
         </li>
         <li onClick={menuClose}>
-          <a href="#experience">Works</a>
+          <a href="#myworks">Works</a>
+        </li>
+        <li onClick={menuClose}>
+          <a href="#experience">Experience</a>
         </li>
         <li onClick={menuClose}>
           <a href="#contact">Contact</a>

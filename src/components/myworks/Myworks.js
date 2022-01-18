@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./myworks.css";
-// 1:56:36
+
 function Myworks() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const data = [

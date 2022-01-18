@@ -3,6 +3,7 @@ import Header from "./components/header/Header";
 import About from "./components/intro/About";
 import Myworks from "./components/myworks/Myworks";
 import Experience from "./components/experience/Experience";
+import Pokemonlist from "./components/pokemonApp/PokemonList";
 import Aboutme from "./components/aboutme/Aboutme";
 import Contacts from "./components/contacts/Contacts";
 import "./app.css";
@@ -18,6 +19,7 @@ function App() {
         <About />
         <Aboutme />
         <Myworks />
+        <Pokemonlist />
         <Experience />
         <Contacts />
       </div>

@@ -46,8 +46,8 @@
   display: flex;
   position: absolute;
   left: 0vw;
-  -webkit-transition: all 1.6s ease;
-  transition: all 1.6s ease;
+  -webkit-transition: all 1.6s ease-out;
+  transition: all 1.6s ease-out;
 }
 
 .myworks .slider .container {

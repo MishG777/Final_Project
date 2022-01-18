@@ -16,9 +16,7 @@ function Header({ menuOpen, setmenuOpen }) {
           <div className="itemContainer">
             <Mail className="icon" />
             <span>Mikheil.gibradze.1@btu.edu.ge</span>
-          </div>
-          <div className="cv">
-            <a href="myworks/My_CV.pdf" download>
+            <a href="myworks/My_CV.pdf" download className="cv">
               CV
             </a>
           </div>

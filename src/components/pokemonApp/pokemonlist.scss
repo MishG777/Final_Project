@@ -1,0 +1,82 @@
+@import "../../global.scss";
+
+.main-div {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  background-color: $mainColor;
+
+  .left-div {
+    flex: 0.5;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    .left-cont {
+      background-color: white;
+      border-radius: 30px;
+      height: 95%;
+      width: 92%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .right-div {
+    flex: 0.5;
+    justify-content: center;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    .right-cont {
+      background-color: white;
+      border-radius: 30px;
+      height: 95%;
+      width: 92%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .text {
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      .poki-details {
+        border: 2px solid black;
+        border-radius: 20px;
+        width: 300px;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+          font-family: "Josefin Sans", sans-serif;
+        }
+      }
+    }
+  }
+
+  .input-value {
+    box-sizing: border-box;
+    font-size: 1.5rem;
+    padding: 1rem;
+    display: block;
+    margin: 2rem auto;
+    border-radius: 20px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+
+    .img {
+      height: 20em;
+    }
+  }
+}

@@ -22,7 +22,6 @@ function App() {
         <Myworks />
         <Pokemonlist />
         <Experience />
-
         <Contacts />
       </div>
     </div>

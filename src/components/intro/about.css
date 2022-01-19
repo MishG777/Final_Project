@@ -124,11 +124,24 @@
           transform: translateX(-50%);
 }
 
+@media (max-width: 868px) {
+  .about .right a {
+    height: 100px;
+  }
+}
+
 .about .right a img {
   width: 100px;
   position: relative;
   -webkit-animation: arrow 1s infinite;
           animation: arrow 1s infinite;
+}
+
+@media (max-width: 868px) {
+  .about .right a img {
+    width: 70px;
+    margin-top: 25px;
+  }
 }
 
 @-webkit-keyframes arrow {

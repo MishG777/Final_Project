@@ -1,13 +1,18 @@
 @import "../../global.scss";
 
 .movie {
-  width: 220px;
+  width: 200px;
   margin: 20px;
   background-color: $mainLighter;
   border-radius: 10px;
   box-shadow: 4px 4px 7px $mainLighter;
   overflow: hidden;
   position: relative;
+
+  @include mobile {
+    width: 160px;
+    margin: 10px;
+  }
 
   * {
     font-family: "Josefin Sans", sans-serif;
@@ -45,6 +50,11 @@
     padding: 10px;
     transform: translateY(100%);
     transition: all 1s ease-in-out;
+    max-height: 96%;
+    overflow: hidden;
+    @include mobile {
+      max-height: 95%;
+    }
     h3 {
       margin-bottom: 3px;
     }

@@ -1,5 +1,5 @@
 .movie {
-  width: 220px;
+  width: 200px;
   margin: 20px;
   background-color: #e48154;
   border-radius: 10px;
@@ -7,6 +7,13 @@
           box-shadow: 4px 4px 7px #e48154;
   overflow: hidden;
   position: relative;
+}
+
+@media (max-width: 868px) {
+  .movie {
+    width: 160px;
+    margin: 10px;
+  }
 }
 
 .movie * {
@@ -58,6 +65,14 @@
           transform: translateY(100%);
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
+  max-height: 96%;
+  overflow: hidden;
+}
+
+@media (max-width: 868px) {
+  .movie .movie-over {
+    max-height: 95%;
+  }
 }
 
 .movie .movie-over h3 {

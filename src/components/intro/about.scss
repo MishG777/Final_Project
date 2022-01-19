@@ -78,11 +78,19 @@
       bottom: 10px;
       left: 50%;
       transform: translateX(-50%);
+      @include mobile {
+        height: 100px;
+      }
 
       img {
         width: 100px;
         position: relative;
         animation: arrow 1s infinite;
+
+        @include mobile {
+          width: 70px;
+          margin-top: 25px;
+        }
       }
 
       @keyframes arrow {

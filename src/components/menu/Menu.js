@@ -22,7 +22,7 @@ function Menu({ menuOpen, setmenuOpen }) {
           <a href="#experience">Experience</a>
         </li>
         <li onClick={menuClose}>
-          <a href="#contact">Contact</a>
+          <a href="#contacts">Contact</a>
         </li>
       </ul>
     </div>

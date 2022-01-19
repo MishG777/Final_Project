@@ -7,15 +7,29 @@
     font-family: "Josefin Sans", sans-serif;
   }
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .left {
     flex: 1;
     overflow: hidden;
+
+    @include mobile {
+      display: flex;
+      justify-content: center;
+    }
 
     img {
       height: 90%;
       width: 80%;
       margin: 40px 80px;
       border-radius: 20px;
+
+      @include mobile {
+        width: 80%;
+        margin: 0;
+      }
     }
   }
   .right {
@@ -24,6 +38,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include mobile {
+      margin-top: -15px;
+    }
 
     h2 {
       font-size: 30px;
@@ -43,6 +61,11 @@
         font-size: 14px;
         border-radius: 7px;
         padding: 10px;
+
+        @include mobile {
+          width: 200px;
+          height: 20px;
+        }
       }
 
       textarea {
@@ -50,6 +73,11 @@
         height: 200px;
         font-size: 14px;
         padding: 20px;
+
+        @include mobile {
+          width: 200px;
+          height: 100px;
+        }
       }
 
       button {
@@ -64,6 +92,11 @@
         cursor: pointer;
         border: 1px solid $mainColor;
         transition: all 1.5s ease-in;
+
+        @include mobile {
+          width: 130px;
+          height: 40px;
+        }
 
         &:hover {
           transition: all 1.5s ease;
@@ -88,7 +121,10 @@
     align-items: center;
     margin-top: 50px;
     color: $mainColor;
-
+    @include mobile {
+      display: flex;
+      flex-wrap: wrap;
+    }
     h5 {
       display: flex;
       justify-content: center;

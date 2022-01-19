@@ -10,6 +10,10 @@
     font-family: "Josefin Sans", sans-serif;
     letter-spacing: 2px;
     cursor: default;
+    @include mobile {
+      font-size: 15px;
+      overflow: hidden;
+    }
   }
 
   h1 {
@@ -18,6 +22,11 @@
     padding: 15px;
     letter-spacing: 7px;
     cursor: default;
+
+    @include mobile {
+      font-size: 35px;
+      overflow: hidden;
+    }
   }
 
   .container {
@@ -28,11 +37,16 @@
     flex-wrap: wrap;
     margin-top: 50px;
 
+    @include mobile {
+      width: 100%;
+      flex-wrap: wrap;
+      height: 40%;
+    }
+
     .item {
       width: 200px;
       height: 130px;
       border-radius: 20px;
-
       margin: 10px 20px;
       display: flex;
       align-items: center;
@@ -40,6 +54,11 @@
       color: white;
       position: relative;
       cursor: pointer;
+
+      @include mobile {
+        width: 110px;
+        height: 90px;
+      }
 
       h3 {
         position: absolute;
@@ -71,7 +90,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    // border: 2px solid blue;
+
     h4 {
       width: 70%;
       font-size: 20px;
@@ -80,6 +99,11 @@
       align-items: center;
       font-family: "Josefin Sans", sans-serif;
       line-height: 1.4em;
+      @include mobile {
+        width: 95%;
+        font-size: 13px;
+        line-height: 1.4em;
+      }
     }
   }
   .arrow-tools {
@@ -89,6 +113,11 @@
     align-items: center;
     position: relative;
     z-index: 5;
+
+    @include mobile {
+      // height: 70px;
+      overflow: hidden;
+    }
 
     .check {
       width: 120px;
@@ -114,12 +143,21 @@
         opacity: 1;
         transition: all 1s ease-out;
         cursor: default;
+
+        @include mobile {
+          display: none;
+        }
       }
 
       img {
         width: 130px;
         position: relative;
         animation: arrows 1s ease;
+
+        @include mobile {
+          width: 60px;
+          margin-bottom: 23px;
+        }
       }
       @keyframes arrows {
         0% {

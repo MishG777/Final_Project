@@ -1,0 +1,73 @@
+.movie {
+  width: 220px;
+  margin: 20px;
+  background-color: #e48154;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 7px #e48154;
+          box-shadow: 4px 4px 7px #e48154;
+  overflow: hidden;
+  position: relative;
+}
+
+.movie * {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  height: 80px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.movie .movie-info h4 {
+  margin-bottom: 3px;
+}
+
+.movie .movie-info span {
+  margin-top: 2px;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 2px 8px;
+}
+
+.movie .movie-over {
+  background-color: white;
+  position: absolute;
+  color: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.movie .movie-over h3 {
+  margin-bottom: 3px;
+}
+
+.movie:hover > .movie-over {
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+/*# sourceMappingURL=movies.css.map */

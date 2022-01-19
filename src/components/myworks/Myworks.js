@@ -45,7 +45,7 @@ function Myworks() {
 
   return (
     <div className="myworks" id="myworks">
-      <h1 className="title">My Works</h1>
+      <h1 className="title">My Projects</h1>
       <div
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}

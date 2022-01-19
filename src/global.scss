@@ -3,4 +3,11 @@ $mainLighter: rgb(228, 129, 84);
 $secondColor: #2d1a53;
 $workBackcolor: crimson;
 
+$width: 868px;
+
+@mixin mobile {
+  @media (max-width: #{$width}) {
+    @content;
+  }
+}
 // font-family: "Josefin Sans", sans-serif;

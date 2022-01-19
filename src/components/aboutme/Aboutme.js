@@ -95,35 +95,6 @@ function Aboutme() {
     setMore(moreText);
   };
 
-  // const [selected, setSelected] = useState("aboutme");
-
-  // const list = [
-  //   // {
-  //   //   id: "aboutme",
-  //   //   title: "About me",
-  //   // },
-  //   {
-  //     id: "sport",
-  //     title: "Sport",
-  //   },
-  //   {
-  //     id: "love",
-  //     title: "Love",
-  //   },
-  //   {
-  //     id: "education",
-  //     title: "Education",
-  //   },
-  //   {
-  //     id: "car",
-  //     title: "Car",
-  //   },
-  //   // {
-  //   //   id: "more",
-  //   //   title: "More...",
-  //   // },
-  // ];
-
   return (
     <div className="works" id="works">
       <h1>About me</h1>

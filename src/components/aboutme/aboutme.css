@@ -18,12 +18,26 @@
   cursor: default;
 }
 
+@media (max-width: 868px) {
+  .works .hovertxt {
+    font-size: 15px;
+    overflow: hidden;
+  }
+}
+
 .works h1 {
   font-family: "Josefin Sans", sans-serif;
   font-size: 50px;
   padding: 15px;
   letter-spacing: 7px;
   cursor: default;
+}
+
+@media (max-width: 868px) {
+  .works h1 {
+    font-size: 35px;
+    overflow: hidden;
+  }
 }
 
 .works .container {
@@ -40,6 +54,15 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-top: 50px;
+}
+
+@media (max-width: 868px) {
+  .works .container {
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 40%;
+  }
 }
 
 .works .container .item {
@@ -59,6 +82,13 @@
   color: white;
   position: relative;
   cursor: pointer;
+}
+
+@media (max-width: 868px) {
+  .works .container .item {
+    width: 110px;
+    height: 90px;
+  }
 }
 
 .works .container .item h3 {
@@ -117,6 +147,14 @@
   line-height: 1.4em;
 }
 
+@media (max-width: 868px) {
+  .works .text-box h4 {
+    width: 95%;
+    font-size: 13px;
+    line-height: 1.4em;
+  }
+}
+
 .works .arrow-tools {
   width: 100%;
   display: -webkit-box;
@@ -130,6 +168,12 @@
           align-items: center;
   position: relative;
   z-index: 5;
+}
+
+@media (max-width: 868px) {
+  .works .arrow-tools {
+    overflow: hidden;
+  }
 }
 
 .works .arrow-tools .check {
@@ -164,11 +208,24 @@
   cursor: default;
 }
 
+@media (max-width: 868px) {
+  .works .arrow-tools .arrow:hover > .check {
+    display: none;
+  }
+}
+
 .works .arrow-tools .arrow img {
   width: 130px;
   position: relative;
   -webkit-animation: arrows 1s ease;
           animation: arrows 1s ease;
+}
+
+@media (max-width: 868px) {
+  .works .arrow-tools .arrow img {
+    width: 60px;
+    margin-bottom: 23px;
+  }
 }
 
 @-webkit-keyframes arrows {

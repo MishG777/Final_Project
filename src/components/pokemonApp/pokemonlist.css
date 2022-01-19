@@ -33,16 +33,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-div .left-div .left-cont .titllee {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-div .left-div .left-cont::-webkit-scrollbar {
+  display: none;
 }
 
 .main-div .right-div {
@@ -73,16 +78,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.main-div .right-div .right-cont h3 {
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
 .main-div .right-div .right-cont .text {
   font-family: "Josefin Sans", sans-serif;
+  margin-top: 25px;
 }
 
 .main-div .right-div .right-cont .poki-details {

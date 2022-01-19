@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../pokemonApp/pokemonlist.css";
 import axios from "axios";
-import { Button } from "reactstrap";
+import Movies from "../movies/Movies";
 
 function Pokemonlist() {
   const [pokemon, setPokemon] = useState("");
@@ -24,15 +24,37 @@ function Pokemonlist() {
     setPokemonData(toArray);
   };
 
+  // ===========================================================================
+  // const movies = ["1", "2", "3"];
+
+  const FEATURED_API =
+    "https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1";
+
+  const [movies, setMoviesz] = useState([]);
+
+  useEffect(() => {
+    fetch(FEATURED_API)
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        setMoviesz(data.results);
+      });
+  }, []);
+
   return (
     <div className="main-div">
       <div className="left-div">
         <div className="left-cont">
-          <h1>HEREE WILL BE MOVIIEEE</h1>
+          {movies.map((movie) => (
+            <Movies {...movie} key={movie.id} />
+          ))}
         </div>
       </div>
+
+      {/* ------------------------------------------------------------------------- */}
       <div className="right-div">
         <div className="right-cont">
+          <h3>It's my Pokemon API</h3>
           <p className="text">
             Pikachu bulbasaur charmander charizard butterfree pidgeot wartortle
             kakuna raticate

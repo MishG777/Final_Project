@@ -19,11 +19,20 @@
       height: 95%;
       width: 92%;
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
+      flex-wrap: wrap;
+
+      .titllee {
+        display: flex;
+      }
+      // scroll-snap-type: y;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
+
+  // ------------------------------------------------------------
 
   .right-div {
     flex: 0.5;
@@ -38,10 +47,15 @@
       width: 92%;
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
+
+      h3 {
+        margin-top: 20px;
+        font-family: "Josefin Sans", sans-serif;
+      }
       .text {
         font-family: "Josefin Sans", sans-serif;
+        margin-top: 25px;
       }
 
       .poki-details {
